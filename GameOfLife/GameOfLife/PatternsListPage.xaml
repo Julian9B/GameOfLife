@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameOfLife.PatternsListPage"
+             Padding="10">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Most popular cell patterns:" FontSize="Large" TextColor="Black"/>
+        <Label Text="Tap on pattern to see more details"/>
+        <ListView x:Name="PatternsList" ItemSelected="PatternsList_ItemSelected"></ListView>
+    </StackLayout>
+</ContentPage>

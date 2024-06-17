@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameOfLife.GamePage"
+             Padding="10">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Step speed:"/>
+            <Label x:Name="speedLabel" Text="20"/>
+        </StackLayout>
+        <Slider x:Name="speedSlider" Maximum="600" Minimum="20" WidthRequest="500" MinimumTrackColor="#101010" ThumbColor="#101010" MaximumTrackColor="LightGray" ValueChanged="SpeedSlider_ValueChanged"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Start" Clicked="Start_Clicked"/>
+            <Button Text="Stop" Clicked="Stop_Clicked"/>
+            <Button Text="Clear" Clicked="Clear_Clicked"/>
+        </StackLayout>
+
+        <Grid x:Name="map" BackgroundColor="Gray" RowSpacing="1" ColumnSpacing="1"></Grid>
+    </StackLayout>
+</ContentPage>

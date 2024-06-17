@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameOfLife.AboutPage"
+             Padding="10">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label FontSize="Large" Text="Conway's Game of Life" TextColor="Black"/>
+        <Label FontSize="Medium" Text="The Game of Life (or simply Life) is a cellular automaton devised by the British mathematician John Horton Conway in 1970. The universe of the game is an two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead (or populated and unpopulated, respectively). Every cell interacts with its eight neighbors, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:"/>
+        <Label FontSize="Medium" Text="- Any live cell with fewer than two live neighbors dies, as if by underpopulation."/>
+        <Label FontSize="Medium" Text="- Any live cell with two or three live neighbors lives on to the next generation."/>
+        <Label FontSize="Medium" Text="- Any live cell with more than three live neighbors dies, as if by overpopulation."/>
+        <Label FontSize="Medium" Text="- Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction."/>
+    </StackLayout>
+</ContentPage>
